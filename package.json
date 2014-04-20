@@ -1,7 +1,7 @@
 {
   "name": "bizzfuzz",
   "version": "0.0.1",
-  "description": "FizzBuzz",
+  "description": "Extendable FizzBuzz Library in Javascript (LOL)",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -9,8 +9,7 @@
   "keywords": [
     "fizz",
     "buzz",
-    "fizzbuzz",
-    "hypermedia"
+    "FizzBuzz"
   ],
   "author": "Stephen Mizell",
   "license": "MIT",

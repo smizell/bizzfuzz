@@ -1,10 +1,10 @@
 var expect = require('expect.js'),
-    FizzBuzz = require('../index');
+    BizzFuzz = require('../index');
 
-describe("FizzBuzz", function() {
+describe("BizzFuzz", function() {
 
-  it("should be a FizzBuzz object", function() {
-    fizzBuzz = new FizzBuzz()
-    expect(fizzBuzz.valueFor(3)).to.equal("fizz");
+  it("should be a BizzFuzz object", function() {
+    BizzFuzz = new BizzFuzz()
+    expect(BizzFuzz.valueFor(3)).to.equal("fizz");
   });
 });
