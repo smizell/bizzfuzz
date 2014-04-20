@@ -40,7 +40,14 @@ describe("BizzFuzz", function() {
   describe("#startingValue", function() {
 
     it("should return the starting value", function() {
-      expect(bizzFuzz.startingValue()).to.equal("1")
+      expect(bizzFuzz.startingValue()).to.equal("1");
+    });
+  });
+
+  describe("#startingNumber", function() {
+
+    it("should return the starting number", function() {
+      expect(bizzFuzz.startingNumber()).to.equal(1);
     });
   });
 });
