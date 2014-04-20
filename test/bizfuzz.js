@@ -37,6 +37,17 @@ describe("BizzFuzz", function() {
     });
   });
 
+  describe("#isNextAfter", function() {
+
+    it("should return true if there is a next value", function() {
+      expect(bizzFuzz.isNextAfter(3)).to.equal(true);
+    });
+
+    it("should return false if there is a next value", function() {
+      expect(bizzFuzz.isNextAfter(100)).to.be(false);
+    });
+  });
+
   describe("#startingValue", function() {
 
     it("should return the starting value", function() {
