@@ -1,0 +1,25 @@
+{
+  "name": "bizzfuzz",
+  "version": "0.0.0",
+  "description": "FizzBuzz",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "keywords": [
+    "fizz",
+    "buzz",
+    "fizzbuzz",
+    "hypermedia"
+  ],
+  "author": "Stephen Mizell",
+  "license": "MIT",
+  "dependencies": {
+    "express": "~4.0.0",
+    "underscore": "~1.6.0"
+  },
+  "devDependencies": {
+    "mocha": "~1.18.2",
+    "expect.js": "~0.3.1"
+  }
+}
