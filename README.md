@@ -23,6 +23,16 @@ bizzFuzz = new BizzFuzz;
 bizzFuzz.nextAfter(10); // Returns 11 with default settings
 ```
 
+### `isNextAfter`
+
+Function for returning a boolean of whether or not there is a next number after the one supplied
+
+```javascript
+bizzFuzz = new BizzFuzz;
+bizzFuzz.isNextAfter(10); // Returns true
+bizzFuzz.isNextAfter(100); // Returns false
+```
+
 ## Options
 
 BizzFuzz comes with defaults that for the conditions of the question:
