@@ -9,16 +9,16 @@ describe("BizzFuzz", function() {
       bizzFuzz = new BizzFuzz;
     });
 
-    it("should return fizz when only divisible by three", function() {
-      expect(bizzFuzz.valueFor(3)).to.equal("fizz");
+    it("should return Fizz when only divisible by three", function() {
+      expect(bizzFuzz.valueFor(3)).to.equal("Fizz");
     });
 
-    it("should return buzz when only divisible by five", function() {
-      expect(bizzFuzz.valueFor(5)).to.equal("buzz");
+    it("should return Buzz when only divisible by five", function() {
+      expect(bizzFuzz.valueFor(5)).to.equal("Buzz");
     });
 
-    it("should return fizzbuzz when divisible by three and five", function() {
-      expect(bizzFuzz.valueFor(15)).to.equal("fizzbuzz");
+    it("should return FizzBuzz when divisible by three and five", function() {
+      expect(bizzFuzz.valueFor(15)).to.equal("FizzBuzz");
     });
 
     it("should return the number when not divisible by three and five", function() {

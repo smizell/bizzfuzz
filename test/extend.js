@@ -31,7 +31,7 @@ describe("Extend BizzFuzz", function() {
 
     it("should change firstNumber number", function() {
       bizzFuzz = new BizzFuzz({ firstNumber: 2 });
-      expect(bizzFuzz.valueFor(4)).to.equal("fizz");
+      expect(bizzFuzz.valueFor(4)).to.equal("Fizz");
     });
   });
 
@@ -39,7 +39,7 @@ describe("Extend BizzFuzz", function() {
 
     it("should change secondNumber number", function() {
       bizzFuzz = new BizzFuzz({ secondNumber: 7 });
-      expect(bizzFuzz.valueFor(7)).to.equal("buzz");
+      expect(bizzFuzz.valueFor(7)).to.equal("Buzz");
     });
   });
 
@@ -49,7 +49,7 @@ describe("Extend BizzFuzz", function() {
       var firstNumberTestFunc = function(num) { return num === 22 };
       bizzFuzz = new BizzFuzz({ firstNumber: 3, secondNumber: 5, firstNumberTest: firstNumberTestFunc });
       expect(bizzFuzz.valueFor(3)).to.equal("3");
-      expect(bizzFuzz.valueFor(22)).to.equal("fizz");
+      expect(bizzFuzz.valueFor(22)).to.equal("Fizz");
     });
   });
 
@@ -59,40 +59,40 @@ describe("Extend BizzFuzz", function() {
       var secondNumberTestFunc = function(num) { return num === 26 };
       bizzFuzz = new BizzFuzz({ firstNumber: 3, secondNumber: 5, secondNumberTest: secondNumberTestFunc });
       expect(bizzFuzz.valueFor(5)).to.equal("5");
-      expect(bizzFuzz.valueFor(26)).to.equal("buzz");
+      expect(bizzFuzz.valueFor(26)).to.equal("Buzz");
     });
   });
 
   describe("#firstTestSuccess", function() {
 
     it("should change firstTestSuccess value", function() {
-      bizzFuzz = new BizzFuzz({ firstNumber: 3, firstTestSuccess: "foo" });
-      expect(bizzFuzz.valueFor(3)).to.equal("foo");
+      bizzFuzz = new BizzFuzz({ firstNumber: 3, firstTestSuccess: "Foo" });
+      expect(bizzFuzz.valueFor(3)).to.equal("Foo");
     });
   });
 
   describe("#secondTestSuccess", function() {
 
     it("should change secondTestSuccess value", function() {
-      bizzFuzz = new BizzFuzz({ secondNumber: 5, secondTestSuccess: "bar" });
-      expect(bizzFuzz.valueFor(5)).to.equal("bar");
+      bizzFuzz = new BizzFuzz({ secondNumber: 5, secondTestSuccess: "Bar" });
+      expect(bizzFuzz.valueFor(5)).to.equal("Bar");
     });
   });
 
   describe("#bothSuccess", function() {
 
     it("should change bothSuccess value", function() {
-      bizzFuzz = new BizzFuzz({ firstNumber: 3, secondNumber: 5, bothSuccess: "foobar" });
-      expect(bizzFuzz.valueFor(15)).to.equal("foobar");
+      bizzFuzz = new BizzFuzz({ firstNumber: 3, secondNumber: 5, bothSuccess: "FooBar" });
+      expect(bizzFuzz.valueFor(15)).to.equal("FooBar");
     });
   });
 
   describe("#noSuccess", function() {
 
     it("should change noSuccess value", function() {
-      var noSuccessFunc = function(num) { return "fail" };
+      var noSuccessFunc = function(num) { return "Fail" };
       bizzFuzz = new BizzFuzz({ firstNumber: 3, secondNumber: 5, noSuccess: noSuccessFunc });
-      expect(bizzFuzz.valueFor(2)).to.equal("fail");
+      expect(bizzFuzz.valueFor(2)).to.equal("Fail");
     });
   });
 });

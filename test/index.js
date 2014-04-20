@@ -5,6 +5,6 @@ describe("BizzFuzz", function() {
 
   it("should be a BizzFuzz object", function() {
     BizzFuzz = new BizzFuzz()
-    expect(BizzFuzz.valueFor(3)).to.equal("fizz");
+    expect(BizzFuzz.valueFor(3)).to.equal("Fizz");
   });
 });

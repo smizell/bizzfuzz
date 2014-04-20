@@ -1,6 +1,6 @@
 {
   "name": "bizzfuzz",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Extendable FizzBuzz Library in Javascript (LOL)",
   "main": "index.js",
   "scripts": {
