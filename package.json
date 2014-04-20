@@ -1,6 +1,6 @@
 {
   "name": "bizzfuzz",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Extendable FizzBuzz Library in Javascript (LOL)",
   "main": "index.js",
   "scripts": {
@@ -14,7 +14,6 @@
   "author": "Stephen Mizell",
   "license": "MIT",
   "dependencies": {
-    "express": "~4.0.0",
     "underscore": "~1.6.0"
   },
   "devDependencies": {
