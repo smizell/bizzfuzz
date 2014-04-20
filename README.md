@@ -88,3 +88,25 @@ bizzFuzz = BizzFuzz({
 ```
 
 See tests for more examples.
+
+## Example FizzBuzz
+
+Below is an example using BizzFuzz to do a FizzBuzz.
+
+```javascript
+var BizzFuzz = require('bizzfuzz');
+
+var bizzFuzz = new BizzFuzz;
+
+// Recursive FizzBuzz function
+function fizzbuzz(number) {
+  console.log(bizzFuzz.valueFor(number));
+
+  if (bizzFuzz.isNextAfter(number)) {
+    fizzbuzz(bizzFuzz.nextAfter(number));
+  }
+}
+
+// Start the FizzBuzz
+fizzbuzz(bizzFuzz.startingNumber());
+```
